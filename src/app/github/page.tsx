@@ -1,38 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import { FaGithub } from "react-icons/fa";
 
 export default function Home() {
   const [data, setData] = useState([]);
   const [error, setError] = useState(null);
 
-  const router = useRouter();
-
   useEffect(() => {
-    const isAuthenticated = localStorage.getItem("auth");
-    if (!isAuthenticated) {
-      router.push("/login");
-    } else {
-      const fetchData = async () => {
-        try {
-          const response = await fetch(
-            "https://sheetdb.io/api/v1/hr1qxsn08powk"
-          );
-          if (!response.ok) {
-            throw new Error("Failed to fetch data");
-          }
-          const result = await response.json();
-          console.log(result);
-          setData(result);
-        } catch (error: any) {
-          setError(error.message);
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://sheetdb.io/api/v1/hr1qxsn08powk");
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
         }
-      };
-      fetchData();
-    }
-  }, [router]);
+        const result = await response.json();
+        console.log(result);
+        setData(result);
+      } catch (error: any) {
+        setError(error.message);
+      }
+    };
+    fetchData();
+  }, []);
 
   if (error) {
     return <div>Error: {error}</div>;
