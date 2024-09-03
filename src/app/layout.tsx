@@ -5,8 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cek Keaktifan PWeb C",
-  description: "ini buat cek poin keaktifan ya ges",
+  title: "Pemrograman Web C",
 };
 
 export default function RootLayout({
