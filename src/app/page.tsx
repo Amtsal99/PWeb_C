@@ -67,7 +67,7 @@ export default function Home() {
                   {item["Nama"]}
                 </td>
                 <td className="border border-1 border-gray-500 text-center">
-                  {item["Poin Keaktifan"]}
+                  {item["Pertemuan"]}
                 </td>
               </tr>
             ))}
