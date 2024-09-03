@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FaGithub } from "react-icons/fa";
+import ButtonLink from "../components/ButtonLink";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -66,6 +67,7 @@ export default function Home() {
           </tbody>
         </table>
       </div>
+      <ButtonLink href="/" text="Back to Home" className="mt-6" />
     </section>
   );
 }
