@@ -34,11 +34,11 @@ export default function Home() {
   }
 
   return (
-    <section className="p-6">
+    <section className="p-6 w-full">
       <h1 className="text-center text-4xl font-bold mb-6 flex justify-center gap-3">
         Daftar Akun Github <FaGithub />
       </h1>
-      <div className="flex justify-center">
+      <div className="flex flex-col items-center ">
         <table
           className="border-1 border-gray-500 border p-10 border-spacing-0"
           cellPadding="6"
@@ -66,8 +66,12 @@ export default function Home() {
             ))}
           </tbody>
         </table>
+        <ButtonLink
+          href="/"
+          text="Back to Home"
+          className="mt-6 px-24 max-md:px-6"
+        />
       </div>
-      <ButtonLink href="/" text="Back to Home" className="mt-6" />
     </section>
   );
 }
