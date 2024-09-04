@@ -10,7 +10,7 @@ export default function ButtonLink({ href, text, className }: ButtonLinkProps) {
   return (
     <Link href={href}>
       <div
-        className={`bg-yellow-100 w-full text-center py-6 md:text-xl font-semibold hover:bg-yellow-400 rounded-3xl ${className}`}
+        className={`bg-yellow-100 w-full text-center py-6 md:text-xl font-semibold hover:bg-yellow-400 rounded-3xl duration-300 ${className}`}
       >
         {text}
       </div>
