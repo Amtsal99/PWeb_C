@@ -1,8 +1,8 @@
 type ContactProps = {
-  name: string;
+  name?: string;
   href: string;
-  number: string;
-  title: string;
+  number?: string;
+  title?: string;
 };
 
 export default function Contact({ name, href, number, title }: ContactProps) {
