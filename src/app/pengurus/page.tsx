@@ -16,7 +16,7 @@ export default function Pengurus() {
   }, []);
 
   return (
-    <div className="flex justify-center p-10 bg-blue-100 h-full min-h-screen h-full min-h-screen pb-16">
+    <div className="flex justify-center p-10 bg-blue-100 h-full min-h-screen pb-16">
       <div className="flex flex-col gap-4 items-center h-screen">
         <Hero />
         <Contact
