@@ -4,7 +4,7 @@ import { FaYoutube } from "react-icons/fa";
 
 export default function Youtube() {
   return (
-    <div className="px-6 h-full min-h-screen flex items-center justify-center bg-blue-100">
+    <div className="overflow-hidden px-6 h-full min-h-screen flex items-center justify-center bg-blue-100">
       <div className="flex flex-col items-center">
         <h1 className="text-center text-4xl font-bold mb-10 flex justify-center items-center gap-3">
           <FaYoutube className="text-5xl text-red-600" /> YouTube
