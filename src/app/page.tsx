@@ -21,7 +21,7 @@ export default function Home() {
         <div className="flex flex-col gap-2 w-full mt-6">
           <ButtonLink href="/point" text="Poin Keaktifan" />
           <ButtonLink href="/github" text="Github" />
-          <ButtonLink href="https://its.id/web" text="YouTube" />
+          <ButtonLink href="/youtube" text="YouTube" />
           <ButtonLink href="/pengurus" text="Pengurus Kelas" />
         </div>
       </div>
