@@ -11,7 +11,9 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://sheetdb.io/api/v1/hr1qxsn08powk");
+        const response = await fetch(
+          process.env.NEXT_PUBLIC_API_GITHUB as string
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }

@@ -15,7 +15,9 @@ export default function Home() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://sheetdb.io/api/v1/wwwvwphi441oo");
+        const response = await fetch(
+          process.env.NEXT_PUBLIC_API_POINTS as string
+        );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
