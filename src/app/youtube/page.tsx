@@ -12,7 +12,7 @@ export default function Youtube() {
         <iframe
           width="420"
           height="240"
-          src="https://www.youtube.com/embed/qEAxG48nPEs?si=MuWpTzcZmREnc6rX&autoplay=1&mute=1"
+          src="https://www.youtube.com/embed/qEAxG48nPEs?si=MuWpTzcZmREnc6rX&autoplay=1&mute=0"
           className="mb-6  max-md:max-w-[330px]"
         />
         <Contact
